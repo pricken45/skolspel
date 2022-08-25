@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavlan</title>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+    <script>
+
+        let pass = "admin";
+        let g = ""
+        while (g != pass) {
+            g = prompt("Lösenord:")
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Heja!</h1>
+    <h1>❌ <progress value="0" id="prog"></progress> 🎉</h1>
+    <button onclick="startaom()" id="omstart">Starta om</button>
+    <div class="UpperContent">
+        <h1 id="usr"></h1>
+    </div>
+    <div id="end" style="display: none;">
+        <h1>Bra jobbat!</h1>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
